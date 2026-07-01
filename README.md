@@ -1,7 +1,7 @@
-# Sources
+# Skills
 
-https://github.com/michaelshimeles/skills
+A compilation of skills I like 
 
-https://github.com/greptileai/skills/tree/main
-
-https://github.com/anthropics/claude-plugins-official/tree/main
+```bash
+npx skills add reidaa/skills
+```

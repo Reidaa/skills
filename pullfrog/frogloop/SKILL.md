@@ -1,5 +1,5 @@
 ---
-name: pullfrogloop
+name: frogloop
 description: >
   Iteratively improves a GitHub pull request with PullFrog. Triggers PullFrog
   reviews, waits for PullFrog GitHub Actions runs to finish, fetches unresolved
@@ -14,7 +14,7 @@ metadata:
 allowed-tools: Bash(gh:*) Bash(git:*) Bash(jq:*) Bash(sleep:*) Bash(date:*)
 ---
 
-# Pullfrogloop
+# Frogloop
 
 Iteratively drive a GitHub PR through PullFrog review and fix cycles until the
 PullFrog feedback is addressed and CI is passing.
@@ -337,7 +337,7 @@ If local changes were made:
 ```bash
 git status --short
 git add -A
-git commit -m "address pullfrog feedback (pullfrogloop iteration N)"
+git commit -m "address pullfrog feedback (frogloop iteration N)"
 git push
 ```
 
@@ -369,7 +369,7 @@ available.
 Successful run:
 
 ```text
-Pullfrogloop complete.
+Frogloop complete.
   PR:                     #123
   Iterations:             2
   Mode:                   local-fix
@@ -382,7 +382,7 @@ Pullfrogloop complete.
 Stopped run:
 
 ```text
-Pullfrogloop stopped after 5 iterations.
+Frogloop stopped after 5 iterations.
   PR:                     #123
   PullFrog run:           success
   Threads resolved:       8
