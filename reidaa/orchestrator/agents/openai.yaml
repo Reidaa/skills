@@ -1,0 +1,4 @@
+interface:
+  display_name: "Orchestrator"
+  short_description: "Delegate work to Codex minions"
+  default_prompt: "Use $orchestrator to coordinate this task through Codex minion subagents."
